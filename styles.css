@@ -1,0 +1,30 @@
+html {
+	font-size: 100%;
+	font-family: Arial;
+}
+
+.container .box {
+	min-height: 200px;
+	line-height: 200px;
+	width: 32%;
+	border: 2px solid black;
+	float: left;
+	text-align: center;
+	font-size: 60px;
+	vertical-align: middle;
+}
+
+.container {
+	width: 100%;
+}
+
+.content {
+	padding: 5%;
+	width: 600px;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+}
