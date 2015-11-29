@@ -28,3 +28,25 @@ h1 {
 	text-align: center;
 	font-size: 40px;
 }
+
+#gamestage {
+	text-align: center;
+	height: 20px;
+}
+
+#winbox {
+	text-align: center;
+	height: 20px;
+}
+
+.winsquaresx {
+	background-color: blue;
+	font-size: 50px;
+	color: white;
+}
+
+.winsquareso {
+	background-color: red;
+	font-size: 50px;
+	color: white;
+}
