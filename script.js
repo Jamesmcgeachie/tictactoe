@@ -1,10 +1,12 @@
 $(document).ready(function() {
 
-	// Sets up board as a collection of all divs with the class of box and setting turn # to 0.
+	// Sets up board as a collection of all divs with the class of box and sets turn # to 0.
 	var board = $('div .box');
 	var turn = 0;
 
 	// Checks if a string of 3 box values will equal a string of 3 of the symbol within the box.
+	// If win condition is met, displays a win message, turns off the board click event and
+	// applies a class to the boxes that fufilled the win condition.
 	function win(box1, box2, box3, symbol) {
 		if ( box1.text() + box2.text() + box3.text() === symbol + symbol + symbol ) {
 			$('#gamestage').html( symbol + ' Player Wins!' ).css({'color': 'orange', 'fontWeight': 'bold'});
