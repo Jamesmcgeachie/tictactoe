@@ -19,7 +19,7 @@ html {
 }
 
 .content {
-	padding: 5%;
+	padding: 2%;
 	width: 600px;
 	margin: auto;
 }
@@ -31,13 +31,14 @@ h1 {
 
 #gamestage {
 	text-align: center;
-	height: 20px;
+	height: 30px;
+	width: 40%;
+	margin: auto;
+	padding: 1%;
+	padding-top: 2%;
+	border-radius: 30px;
 }
 
-#winbox {
-	text-align: center;
-	height: 20px;
-}
 
 .winsquaresx {
 	background-color: blue;
