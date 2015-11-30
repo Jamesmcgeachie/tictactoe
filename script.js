@@ -10,6 +10,7 @@ $(document).ready(function() {
 	function win(box1, box2, box3, symbol) {
 		if ( box1.text() + box2.text() + box3.text() === symbol + symbol + symbol ) {
 			$('#gamestage').html( symbol + ' Player Wins!' ).css({'color': 'orange', 'fontWeight': 'bold'});
+			board.removeClass('hoverpink');
 			board.off('click');
 			if ( symbol === 'X' ) {
 				box1.addClass('winsquaresx');
@@ -65,7 +66,7 @@ $(document).ready(function() {
 		};
 
 		// Displays whose turn it is, up until turn 9 at which point
-		// if the game hasn't ended it will display tied game.
+		// if the game hasn't been won it will display tied game.
 		function whoseTurn() {
 			if (turn % 2 == 0 && turn < 9 ) {
 				$('#gamestage').html('X player to move');
@@ -73,7 +74,8 @@ $(document).ready(function() {
 				$('#gamestage').html('O player to move');
 			} else {
 				$('#gamestage').html('Tied Game').css({'color': 'grey', 'fontWeight': 'bold'});
-			}
+				board.removeClass('hoverpink');
+			};
 		};
 
 		// Calls the 3 functions defined in the processTurn function

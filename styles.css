@@ -14,6 +14,9 @@ html {
 	vertical-align: middle;
 }
 
+.hoverpink:hover {
+	background-color: pink;
+}
 .container {
 	width: 100%;
 }
